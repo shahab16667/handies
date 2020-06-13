@@ -20,13 +20,13 @@ kitchen_install = Category.create!(title: "Kitchen Installation Services")
 painting = Category.create!(title: "Painting Services")
 roofing = Category.create!(title: "Roofing Services")
 artwork =  Category.create!(title: "Art work Services")
-dj =  Category.create!(title: "find Dj near Services")
+dj = Category.create!(title: "find near DJ Services")
 # create companies is one of the users you
 
 handymanguys = Company.create!(name: "HandymanGuys Pty Ltd", abn: "54 634 046 138", description: "Handyman Services in Beautiful Melbourne", owner: shahab)
 artbybrush = Company.create!(name: "Art By Brush Pty Ltd", abn: "54 645 067 138", description: "Beautiful arts for sale", owner: daniel)
 herodjs = Company.create!(name: "Hero Djs Pty Ltd", abn: "54 645 045 788", description: "find nearest Dj ", owner: henry)
 # create handyman for companies each handyman belogs to a company and category
-ben = Handyman.create!(name: "Ben Jahan", description: "Handyman Services", company: shahab, category: kitchen_install)
+ben = Handyman.create!(name: "Ben Jahan", description: "Handyman Services", company: handymanguys, category: kitchen_install)
 daniel = Handyman.create!(name: "Daniel ", description: "Artist", company: artbybrush, category: artwork)
-henry = Handyman.create!(name: "Henry ", description: "Dj finder", company: artbybrush, category: artwork)
+henry = Handyman.create!(name: "Henry ", description: "Dj finder", company: herodjs, category: dj)
